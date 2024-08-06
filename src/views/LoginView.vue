@@ -38,21 +38,21 @@ export default {
   data() {
     return {
       username:'',password:'',loginError:'',
-    };
+    }
   },
   methods: {
     login(){
       this.$store.commit('loginUser', {username:this.username,
-        password:this.password}      );
-      console.log('결과',this.$store.state.user);
+        password:this.password}      )
+      console.log('결과',this.$store.state.user)
       // 롤그인 결과 처리
       if (this.$store.state.user === null) {
-        this.username='';
-        this.password='';
-        this.loginError = '아이디나 비밀번호가 올바르지 않습니다.';               
+        this.username=''
+        this.password=''
+        this.loginError = '아이디나 비밀번호가 올바르지 않습니다.'              
       } else {
       // 로그인 성공 시 페이지 이동 등의 처리
-         this.$router.push('/');
+         this.$router.push('/')
       }
     }
   },

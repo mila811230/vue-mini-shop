@@ -73,8 +73,8 @@ export default {
   },
   methods: {
     addGood(){
-      this.$store.commit('addProduct', this.newProduct);
-      this.$router.push('/sales');
+      this.$store.commit('addProduct', this.newProduct)
+      this.$router.push('/sales')
     }
   },
   setup() {

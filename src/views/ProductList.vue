@@ -51,29 +51,29 @@
 </template>
 
 <script>
-import {mapGetters} from 'vuex';
+import {mapGetters} from 'vuex'
 export default {
   name: 'ProductList',
   data() {
     return {
       selectedCategory:'',
-    };
+    }
   },
   computed: {
     ...mapGetters({
       filteredProductList: 'filteredProductList'
     }),
     filteredProductList() {
-      return this.$store.getters.filteredProductList(this.selectedCategory);
+      return this.$store.getters.filteredProductList(this.selectedCategory)
     }
 
   },
   methods: {
     gotoDetail(product_id){
-      this.$router.push({path:'/detail', query:{id:product_id}});
+      this.$router.push({path:'/detail', query:{id:product_id}})
     }
     // sample3() {
-    //   return '';
+    //   return ''
     // }
     // 컴포넌트에서 사용할 메서드를 정의합니다.
   },
@@ -89,7 +89,7 @@ export default {
   unmounted() {
     // 컴포넌트가 파괴되기 전 실행될 로직을 작성합니다.
   }
-};
+}
 </script>
 
 <style scoped>

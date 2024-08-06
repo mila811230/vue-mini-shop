@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import {mapGetters, mapMutations} from 'vuex';
+import {mapGetters, mapMutations} from 'vuex'
 export default {
   name: 'SalesList',
   computed: {
@@ -51,10 +51,10 @@ export default {
   methods:{
     ...mapMutations(['deleteProduct']),
     gotoCreate(){
-      this.$router.push({path:'/create'});
+      this.$router.push({path:'/create'})
     }
   }
-};
+}
 </script>
 
 <style scoped>

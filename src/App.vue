@@ -5,9 +5,9 @@
 </template>
 
 <script>
-// import { defineComponent } from '@vue/composition-api';
-import HeaderArea from './layouts/HeaderArea.vue';
-import FooterArea from './layouts/FooterArea.vue';
+// import { defineComponent } from '@vue/composition-api'
+import HeaderArea from './layouts/HeaderArea.vue'
+import FooterArea from './layouts/FooterArea.vue'
 
 export default {
   components:{HeaderArea, FooterArea},
